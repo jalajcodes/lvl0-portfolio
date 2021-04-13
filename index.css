@@ -42,9 +42,17 @@ a {
     backdrop-filter: blur(1px);
 }
 
+@media only screen and (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 .site-wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -113,9 +121,7 @@ header {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-}
-.section:not(:last-child) {
-    margin-right: 20px;
+    margin: 10px 20px;
 }
 
 .section h2 {
